@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  postgres_marketplace:
+    container_name: postgres_keystore
+    image: postgres:12.2
+    environment:
+      - POSTGRES_USER=keystore
+      - POSTGRES_PASSWORD=keystore
+    ports:
+      - 5432:5432

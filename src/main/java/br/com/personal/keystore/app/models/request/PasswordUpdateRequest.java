@@ -3,15 +3,16 @@ package br.com.personal.keystore.app.models.request;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
 
 public class PasswordUpdateRequest {
+
+    @NotBlank
+    private String title;
 
     @NotBlank
     private String url;
 
     @NotBlank
-    @Size(max = 60)
     private String login;
 
     @NotBlank
@@ -20,6 +21,16 @@ public class PasswordUpdateRequest {
     @NotNull
     @Positive
     private Long folderId;
+
+    private String notes;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getUrl() {
         return url;
@@ -53,4 +64,11 @@ public class PasswordUpdateRequest {
         this.folderId = folderId;
     }
 
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
 }

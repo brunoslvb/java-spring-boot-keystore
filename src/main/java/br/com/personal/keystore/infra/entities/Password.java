@@ -24,12 +24,15 @@ public class Password {
     @ManyToOne
     private User user;
 
+    private String title;
+
     private String url;
 
-    @Column(length = 60)
     private String login;
 
     private String password;
+
+    private String notes;
 
     @ManyToOne
     private Folder folder;
@@ -58,6 +61,14 @@ public class Password {
         this.user = user;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getUrl() {
         return url;
     }
@@ -80,6 +91,14 @@ public class Password {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public Folder getFolder() {

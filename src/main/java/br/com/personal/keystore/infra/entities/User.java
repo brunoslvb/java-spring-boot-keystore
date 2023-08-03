@@ -26,7 +26,7 @@ public class User {
     @Column(length = 50, nullable = false)
     private String name;
 
-    @Column(unique = true, length = 60, nullable = false)
+    @Column(unique = true, nullable = false)
     private String email;
 
     @Column(nullable = false)

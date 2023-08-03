@@ -6,6 +6,8 @@ public class PasswordResponse {
 
     private Long id;
 
+    private String title;
+
     private String url;
 
     private String login;
@@ -13,6 +15,8 @@ public class PasswordResponse {
     private String password;
 
     private String folderName;
+
+    private String notes;
 
     private LocalDateTime createdAt;
 
@@ -24,6 +28,14 @@ public class PasswordResponse {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUrl() {
@@ -56,6 +68,14 @@ public class PasswordResponse {
 
     public void setFolderName(String folderName) {
         this.folderName = folderName;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public LocalDateTime getCreatedAt() {

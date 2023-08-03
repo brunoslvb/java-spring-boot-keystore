@@ -12,7 +12,6 @@ public class UserSaveRequest {
 
     @NotBlank
     @Email
-    @Size(max = 50)
     private String email;
 
     @NotBlank
